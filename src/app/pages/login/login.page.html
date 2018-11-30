@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid align-items-center justify-content-center padding>
+    <ion-row>
+      <ion-col>
+        <form>
+          <ion-item>
+            <ion-label position="floating" >Email</ion-label>
+            <ion-input type="text"  [(ngModel)]="user.email" class="form-control" name="email" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating" >Password</ion-label>
+            <ion-input type="password"  [(ngModel)]="user.password" class="form-control" name="password" required></ion-input>
+          </ion-item>
+          <ion-button justify-self-center (click)="login()">Log In</ion-button>
+          <p text-center (click)="createAccount()">Create Account</p>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

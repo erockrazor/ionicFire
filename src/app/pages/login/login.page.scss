@@ -1,0 +1,16 @@
+
+ion-grid {
+    display: flex;
+    height: 100%;
+        ion-item {
+            --padding-start: 0px;
+        }
+        form {
+            max-width: 500px;
+        }
+        ion-button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+}
